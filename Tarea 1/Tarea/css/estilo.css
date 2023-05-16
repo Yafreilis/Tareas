@@ -1,0 +1,118 @@
+html {
+  height: 100%;
+  background: transparent;
+  background-color: #151414;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Helvetica', 'Arial', sans-serif;
+}
+
+#contenedor {
+  height: 100%;
+  background: transparent;
+}
+
+.login,
+.register {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 80%;
+  max-width: 400px;
+  padding: 5%;
+  transform: translate(-50%, -50%);
+  background: linear-gradient(#373636, #282626);
+  box-sizing: border-box;
+  box-shadow: 0 0 0 #ADADAD, 0 0 10px #ADADAD, 0 0 35px #ADADAD, 0 0 75px #ADADAD;
+  border-radius: 10px;
+}
+
+.login h2 {
+  margin: 0 0 30px;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+}
+
+.login .user-box {
+  position: relative;
+  text-align: center;
+}
+
+.login .user-box label {
+  display: inline-block;
+  width: 100%;
+  padding: 0px 0px 10px 0px;
+  font-size: 16px;
+  color: #fff;
+}
+
+.login .user-box input:focus ~ label,
+.login .user-box input:valid ~ label,
+.regi-box input:valid ~ label,
+.regi-box input:focus ~ label {
+  top: -20px;
+  left: 0;
+  color: #fff;
+  font-size: 12px;
+}
+
+.login form a {
+  display: inline-block;
+  color: #1773dc;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: 0.5s;
+  margin-top: 20px;
+  letter-spacing: 4px;
+  border-radius: 5px;
+}
+
+.login a:hover {
+  color: white;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  border-radius: 0;
+  border-radius: 100%;
+  box-sizing: border-box;
+  box-shadow: 0 0 0 #ADADAD, 0 0 1px #ADADAD, 0 0 3px #ADADAD, 0 0 7px #ADADAD;
+  animation: mostrar-foto 5s normal;
+}
+
+img:hover {
+  box-shadow: 0 0 0 #ADADAD, 0 0 8px #ADADAD, 0 0 17px #ADADAD, 0 0 28px #ADADAD;
+  transition: 0.9s;
+}
+
+@media screen and (max-width: 480px) {
+  .login,
+  .register {
+    width: 90%;
+    padding: 10%;
+  }
+}
+
+.material-icons {
+  text-decoration: none;
+  color: #38BDD1;
+}
+
+@keyframes mostrar-foto {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
+}
